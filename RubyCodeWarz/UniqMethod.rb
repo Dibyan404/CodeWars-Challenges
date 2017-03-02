@@ -9,16 +9,40 @@ All values given are integers (they can be positive or negative).
 You are given an array but it may be empty.
 They array may have duplicates or it may not.
 You cannot use the uniq method on Arrays (don't even try it), or the nub function from Data.List.
+-====With the use of class====-
+
+class Codewarz
+  
+    def initialize(integers)
+      @integers = integers 
+    end
+    
+    def unique
+      puts "Enter array of Integers"
+      while true
+        arr = gets.chomp
+        break if arr.empty?
+        @integers << arr
+      end
+      duplicate
+    end
+    
+    def duplicate
+        ar = Array.new
+        @integers.each do |n|
+          ar << n unless ar.include?(n)
+        end
+        puts "#{ar}"
+    end
+end
+
+
+input = Codewarz.new([])
+input.unique.inspect
+
 =end
 
 def unique(integers) 
-  #puts "Enter any array of Integers"
-  #while true
-    #arr = gets.chomp
-    #break if arr.empty?
-    #integers << arr
-  #end
-  
   ar = Array.new
   integers.each do |n|
     ar << n unless ar.include?(n)
