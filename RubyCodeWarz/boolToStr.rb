@@ -33,6 +33,8 @@ end
 
 =end
 
+
+
 def bool_to_word bool
     if true
         "yes"
@@ -40,4 +42,6 @@ def bool_to_word bool
         "no"
     end
 end
+
+
 puts bool_to_word true

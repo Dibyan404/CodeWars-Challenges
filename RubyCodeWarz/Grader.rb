@@ -61,4 +61,4 @@ def grader(score)
     end
 end
 
-puts grader(0.5)
+puts grader(0.8)
