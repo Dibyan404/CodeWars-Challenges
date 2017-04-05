@@ -25,7 +25,6 @@ end
 def numberToString(num)
      str = num.to_s
      str
-  # Convert a Number to a String
 end
 
 puts numberToString(34)

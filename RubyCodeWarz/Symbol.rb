@@ -32,6 +32,11 @@ Symbols make good hash keys for a few reasons:
 my_first_symbol = :symbolprolo
 =end
 
+
+
+
+
+
 strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
 
 # Add your code below!
