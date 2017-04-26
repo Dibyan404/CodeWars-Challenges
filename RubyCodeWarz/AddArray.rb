@@ -16,4 +16,5 @@ websites << ("codewars")
 websites << ("Ruby")
 websites << ("Challenges")
 puts websites.length
+puts websites.last
 

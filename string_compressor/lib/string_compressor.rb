@@ -20,20 +20,20 @@ end
 
 def string_compressor(string)
  array = []
-    ret = ""
+    compressed_str = ""
     string.chars.each do |c|
         if c == array.last
             array << c
         else
-            ret += "#{array.last}#{array.length}" if array.length > 0
+            compressed_str += "#{array.last}#{array.length}" if array.length > 0
             array = [c]
         end
     end
 
-    ret += "#{array.last}#{array.length}"
+    compressed_str += "#{array.last}#{array.length}"
 
-    if ret.length < string.length
-        ret
+    if compressed_str.length < string.length
+        compressed_str
     else
         string
     end
