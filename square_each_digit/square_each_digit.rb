@@ -7,8 +7,18 @@ For example, 3211 should turn into 9411, 654326 to 3625169436, and "hello" shoul
 
 
 def square_each_digit num
-  # Write your code here
+    if Integer === num
+        num.to_s.split('').map { |n| n.to_i ** 2 }.join("").to_i
+    else 
+        "NaN"
+    end
+    
 end
+
+puts square_each_digit 3211
+puts square_each_digit "Ruby is Awesome"
+puts square_each_digit 654326
+
 
 describe "#square_each_digit" do
   context "it is a number" do
