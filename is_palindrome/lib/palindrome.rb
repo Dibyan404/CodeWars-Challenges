@@ -7,5 +7,6 @@ Make sure that the method works regardless of capitalization.
 =end
 
 def is_palindrome?(string)
-  # Write your code here!
+  string.downcase! 
+  string == string.reverse ? true : false
 end

@@ -25,9 +25,6 @@ end
 def greet(name)
     return "Hello #{name.capitalize[0]}#{name.downcase[1..20]}!"
 end
-
-
-
 =end
 
 

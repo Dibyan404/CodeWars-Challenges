@@ -1,7 +1,7 @@
 =begin
 Rock Paper Scissors(Control Freak)
 
-<---1--->
+<-1->
 def rps(p1, p2)
   return 'Draw!' if p1 == p2
   
@@ -17,7 +17,7 @@ def win_matrix
     scissors: { rock: 2, paper: 1 }
   }
 end
-<---2--->
+<--2-->
 def rps(p1, p2)
   beatmap = { 'scissors' => 'paper', 'paper' => 'rock', 'rock' => 'scissors' }
 
@@ -29,6 +29,7 @@ def rps(p1, p2)
     "Player 2 won!"
   end
 end
+
 <---3--->
 def rps(p1, p2)
   winning_moves = {
@@ -39,12 +40,12 @@ def rps(p1, p2)
   return 'Draw!' if p1 == p2
   winning_moves[p1] == p2 ? 'Player 1 won!' : 'Player 2 won!'
 end
-<---4--->
+<----4---->
 def rps  (p1, p2)
   return 'Draw!' if p1 === p2
   return "Player #{/rockscissors|scissorspaper|paperrock/ =~ p1+p2 ? 1 : 2} won!";
 end
-<---5--->
+<-----5----->
 def rps(p1, p2)
   return 'Draw!' if p1 == p2
   

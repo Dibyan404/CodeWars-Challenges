@@ -11,7 +11,19 @@ calc_mean([15, 30, 60, 120, 240]) should return 93.0
 Inputs are always populated (non-empty) arrays. 
 Input arrays never include non-integer or non-float elements. 
 Non-array inputs return 0.
-=end
+<Other Methods>
+
+<-1->
+def calc_mean(ary)
+  ary.reduce(:+)/ary.size rescue 0
+end
+
+<--2-->
+def calc_mean(ary)
+  (ary.inject(:+) / ary.length) rescue 0
+end
+<---3--->
+
 def calc_mean(ary)
   if !ary.is_a?(Array)
     0
@@ -19,5 +31,33 @@ def calc_mean(ary)
     0
   else
     # Your code goes here 
+    
+    total = 0
+    ary.each do |x|
+       total = total + x
+    end
+    total/ary.length
   end
 end
+
+<----4---->
+
+def calc_mean(ary)
+  ary.is_a?(Array) && ary.any? ? ary.reduce(:+)/ary.size : 0
+end
+
+=end
+def calc_mean(ary)
+  div = ary.length
+  if !ary.is_a?(Array)
+    0
+  elsif ary.empty?
+    0
+  else
+    ary.inject(0) {|sum,n| sum + n/div.to_f}
+  end
+end
+
+
+puts calc_mean([15, 30, 60, 120, 240])
+puts calc_mean([6, 8, 10])
