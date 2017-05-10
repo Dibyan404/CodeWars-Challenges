@@ -10,7 +10,7 @@ end
 
 <--------2-------->
 def bool_to_word bool
-  return 'Yes' || 'No'
+  'Yes' || 'No'
 end
 
 <------3------->
@@ -35,8 +35,8 @@ end
 
 
 
-def bool_to_word bool
-    if true
+def bool_to_word(bool)
+    if bool == true
         "yes"
     else
         "no"

@@ -57,11 +57,10 @@ end
 =end
 
 def solution(sentence)
-    
-    sentence.downcase!
-    text = sentence.split(" ").reverse.join(" ")
-    
+    sentence.downcase.split(" ").reverse.join(" ")
 end
 
-books = "The greatest victory is that which requires no battle"
-puts "#{solution(books)}"
+#books = "The greatest victory is that which requires no battle"
+#puts "#{solution(books)}"
+
+puts solution "The greatest victory is that which requires no battle"

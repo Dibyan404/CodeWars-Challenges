@@ -23,8 +23,7 @@ end
 
 
 def numberToString(num)
-     str = num.to_s
-     str
+     num.to_s
 end
 
 puts numberToString(34)

@@ -7,12 +7,7 @@ For example, 3211 should turn into 9411, 654326 to 3625169436, and "hello" shoul
 
 
 def square_each_digit num
-    if Integer === num
-        num.to_s.split('').map { |n| n.to_i ** 2 }.join("").to_i
-    else 
-        "NaN"
-    end
-    
+  Integer === num ? num.to_s.split('').map { |n| n.to_i ** 2 }.join("").to_i : "NaN"
 end
 
 puts square_each_digit 3211

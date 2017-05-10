@@ -6,8 +6,6 @@ But Steve doesn't know about order of operations and he wonders why answers are 
 =end
 
 def calculate
-  calc = 2 + 2 
-  cal = calc * 2
-  cal
+  (2 + 2)*2 
 end
 puts calculate

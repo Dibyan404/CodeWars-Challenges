@@ -29,7 +29,7 @@ end
 
 
 def greet(name)
-    name.capitalize! 
+    name.capitalize!
     "Hello " +name+ "!"
 end
 
