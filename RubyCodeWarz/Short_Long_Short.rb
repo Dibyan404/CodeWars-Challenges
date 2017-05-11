@@ -7,6 +7,7 @@ For example:
 solution("1", "22") # returns "1221"
 solution("22", "1") # returns "1221"
 <-1->
+
 def solution(a,b)
     a.length < b.length ? a+b+a:b+a+b
 end

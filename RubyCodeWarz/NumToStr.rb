@@ -1,10 +1,11 @@
 =begin 
 We need a function that can transform a number into a string.
+
 -===OTher Methods====-
 <----1---->
 def numberToString(num)
-  return num unless num.is_a? Integer
-  return num.to_s
+  num unless num.is_a? Integer
+  num.to_s
 end
 <----2--->
     def numberToString(num)

@@ -13,7 +13,7 @@ Your task is to return number of people in the bus after the last bus station. T
 Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the return integer can't be negative.
 <Other Solutions>
 
-<--1-->
+<-1->
 
 def number(bus_stops)
   passengers = 0
@@ -29,7 +29,7 @@ def number(bus_stops)
   bus_stops.reduce(0) { |k, (on, off)| k + on - off }
 end
 
-<--3-->
+<---3--->
 
 def number(bus_stops)
   i = 0 
@@ -41,7 +41,7 @@ end
 return answer.last
 end
 
-<--4-->
+<----4---->
 
 def number(bus_stops)
   onboard = 0
@@ -55,7 +55,7 @@ def number(bus_stops)
   onboard
 end
 
-<--5-->
+<-----5---->
 def number(bus_stops)
   on = 0
   off = 0
@@ -71,7 +71,7 @@ def number(bus_stops)
   return answer
 end
 
-<--6-->
+<------6------>
 def number(bus_stops)
   a = 0
   bus_stops.to_s.delete("[],").split.map.with_index do |v,i|

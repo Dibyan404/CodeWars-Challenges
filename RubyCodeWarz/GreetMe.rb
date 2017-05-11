@@ -29,8 +29,7 @@ end
 
 
 def greet(name)
-    name.capitalize!
-    "Hello " +name+ "!"
+    name.capitalize! << '!'
 end
 
 puts greet('maya')

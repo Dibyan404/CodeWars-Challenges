@@ -9,8 +9,8 @@ All values given are integers (they can be positive or negative).
 You are given an array but it may be empty.
 They array may have duplicates or it may not.
 You cannot use the uniq method on Arrays (don't even try it), or the nub function from Data.List.
--====With the use of class====-
 
+-====With the use of class====-
 class Codewarz
   
     def initialize(integers)

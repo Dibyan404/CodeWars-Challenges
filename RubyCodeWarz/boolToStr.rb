@@ -36,12 +36,12 @@ end
 
 
 def bool_to_word(bool)
+  
     if bool == true
         "yes"
     else
         "no"
     end
 end
-
 
 puts bool_to_word true

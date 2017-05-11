@@ -11,12 +11,12 @@ def squareSum(numbers) #inject can used to sum an enumerable or get the product 
 end
 
 <--2-->
-def squareSum(numbers) #.map allows us to run an operation o each of our array's objects and return them all in the same place.
+def squareSum(numbers) #.map allows us to run an operation on each of our array's objects and return them all in the same place.
   numbers.map{|a| a**2}.reduce(:+) #it allows you to transform a series of items to anything you like!
 end
 
 <---3--->
-def squareSum(numbers) #combines all elements of enum by applying a binary operation. specified by ablock or a symbol that names a method or operator
+def squareSum(numbers) #combines all elements of enum by applying a binary operation. specified by a block or a symbol that names a method or operator
   numbers.reduce(0) { |acc, x| acc + x*x }
 end
 
@@ -40,7 +40,7 @@ def squareSum(numbers)
     numbers.each do |num|
         sum += num**2
     end 
-    puts sum
+    sum
 end
 
-squareSum [1,2,2]
+puts squareSum [1,2,2]

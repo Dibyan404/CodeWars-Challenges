@@ -20,7 +20,8 @@ Output
 319368
 319368
 The .object_id method gets the ID of an object—it's how Ruby knows whether two objects are the exact same object. 
-Run the code in the editor to see that the two "strings" are actually different objects, whereas the :symbol is the same object listed twice.
+
+two "strings" are actually different objects, whereas the :symbol is the same object listed twice.
 
 
 Symbols make good hash keys for a few reasons:
@@ -31,8 +32,6 @@ Symbols make good hash keys for a few reasons:
 
 my_first_symbol = :symbolprolo
 =end
-
-
 
 
 

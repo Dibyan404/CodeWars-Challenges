@@ -30,7 +30,6 @@ def calc_mean(ary)
   elsif ary.empty?
     0
   else
-    # Your code goes here 
     
     total = 0
     ary.each do |x|
@@ -47,6 +46,7 @@ def calc_mean(ary)
 end
 
 =end
+
 def calc_mean(ary)
   div = ary.length
   if !ary.is_a?(Array)

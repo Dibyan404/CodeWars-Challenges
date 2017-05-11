@@ -6,6 +6,8 @@ If the word's length is even, return the middle 2 characters.
 Examples:
 Kata.getMiddle("test") should return "es"
 Kata.getMiddle("testing") should return "t"
+
+S
 -====Other Methods====-
 <---1---->
 def get_middle(s)
@@ -28,14 +30,14 @@ def get_middle(s)
   middle_numbers = []
 
   if s.length == 1
-    return s
+    s
   elsif s.length.odd? 
     middle_numbers << characters[odd_index]
   else s.length.even?
     middle_numbers << characters[even_starting_index] 
     middle_numbers << characters[even_ending_index]
   end
-  return middle_numbers.join
+  middle_numbers.join
 end
 <----4---->
 
@@ -59,12 +61,14 @@ end
 =end
 
 def get_middle(s)
+  
   l = s.length/2
   if s.length.even?
     s[l-1] + s[l]
   else
    s[l]
   end
+  
 end
 puts get_middle("testing")
 puts get_middle("test")
